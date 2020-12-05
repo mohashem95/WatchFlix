@@ -1,0 +1,55 @@
+{
+    "Category":{
+        "Fantacy":[
+            {
+                "Name":  "The Witcher",
+                "Image":  "assets/images/TheWitcher.png",
+                "finished":  false,
+                "Rating":  4,
+                "Trailer":  "https://www.youtube.com/watch?v=ndl1W4ltcmg"
+            },
+            {
+                "Name":  "Game Of Thrones",
+                "Image":  "assets/images/GOT.jpg",
+                "finished":  true,
+                "Rating":  3.5,
+                "Trailer":  "https://www.youtube.com/watch?v=BpJYNVhGf1s"
+            },
+            {
+                "Name":  "Mr.Robot",
+                "Image":  "assets/images/Mr.Robot.jpg",
+                "finished":  true,
+                "Rating":  2.5,
+                "Trailer":  "https://www.youtube.com/watch?v=xIBiJ_SzJTA"
+            }
+        ],
+
+
+        "Action":[
+            {
+                "Name":  "Breaking Bad",
+                "Image":  "assets/images/BB.jpg",
+                "Status":  true,
+                "Rating":  4.5,
+                "Trailer":  "https://www.youtube.com/watch?v=HhesaQXLuRY"
+            },
+            {
+                "Name":  "Peaky Blinders",
+                "Image":  "assets/images/PeakyBlinders.jpg",
+                "Status":  true,
+                "Rating":  4.5,
+                "Trailer":  "https://www.youtube.com/watch?v=oVzVdvGIC7U"
+            },
+            {
+                "Name":  "Umbrella ",
+                "Image":  "assets/images/UmbrellaAcademy.jpg",
+                "finished":  false,
+                "Rating":  3.0,
+                "Trailer":  "https://www.youtube.com/watch?v=0DAmWHxeoKw"
+            }
+
+        ]
+    }
+
+
+}
