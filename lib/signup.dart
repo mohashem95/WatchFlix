@@ -148,9 +148,11 @@ class _SignUpState extends State<SignUp> {
                   controller: email,
                   cursorColor: Colors.red,
                   decoration: InputDecoration(
-                    prefixIcon: Icon(Icons.email, color: Colors.yellow),
+                    filled: true,
+                    fillColor: Colors.yellow,
+                    prefixIcon: Icon(Icons.email, color: Colors.black),
                     labelText: 'Email',
-                    labelStyle: TextStyle(color: Colors.yellow),
+                    labelStyle: TextStyle(color: Colors.black,fontSize: 18,backgroundColor: Colors.yellow),
                     enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(color: Colors.yellow)),
                     border: OutlineInputBorder(),
@@ -163,9 +165,11 @@ class _SignUpState extends State<SignUp> {
                   controller: name,
                   cursorColor: Colors.red,
                   decoration: InputDecoration(
-                    prefixIcon: Icon(Icons.person, color: Colors.yellow),
+                    filled: true,
+                    fillColor: Colors.yellow,
+                    prefixIcon: Icon(Icons.person, color: Colors.black),
                     labelText: 'name',
-                    labelStyle: TextStyle(color: Colors.yellow),
+                    labelStyle: TextStyle(color: Colors.black,fontSize: 18,backgroundColor: Colors.yellow),
                     enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
                       color: Colors.yellow,
@@ -180,9 +184,11 @@ class _SignUpState extends State<SignUp> {
                   controller: password,
                   cursorColor: Colors.red,
                   decoration: InputDecoration(
-                    prefixIcon: Icon(Icons.lock, color: Colors.yellow),
+                    filled: true,
+                    fillColor: Colors.yellow,
+                    prefixIcon: Icon(Icons.lock, color: Colors.black),
                     labelText: 'Password',
-                    labelStyle: TextStyle(color: Colors.yellow),
+                    labelStyle: TextStyle(color: Colors.black,fontSize: 18,backgroundColor: Colors.yellow),
                     enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(color: Colors.yellow)),
                     border: OutlineInputBorder(),
@@ -195,9 +201,11 @@ class _SignUpState extends State<SignUp> {
                   controller: password2,
                   cursorColor: Colors.red,
                   decoration: InputDecoration(
-                    prefixIcon: Icon(Icons.lock, color: Colors.yellow),
-                    labelText: 'conferm password',
-                    labelStyle: TextStyle(color: Colors.yellow),
+                    filled: true,
+                    fillColor: Colors.yellow,
+                    prefixIcon: Icon(Icons.lock, color: Colors.black),
+                    labelText: 'confirm password',
+                    labelStyle: TextStyle(color: Colors.black,fontSize: 18,backgroundColor: Colors.yellow),
                     enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(color: Colors.yellow)),
                     border: OutlineInputBorder(),

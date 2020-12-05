@@ -37,10 +37,11 @@ class SignIn extends StatelessWidget {
                   controller: email,
                   cursorColor: Colors.red,
                   decoration: InputDecoration(
-                    
-                    prefixIcon: Icon(Icons.email, color: Colors.yellow),
+                    filled: true,
+                    fillColor: Colors.yellow,
+                    prefixIcon: Icon(Icons.email, color: Colors.black),
                     labelText: 'email',
-                    labelStyle: TextStyle(color: Colors.yellow),
+                    labelStyle: TextStyle(color: Colors.black,fontSize: 18,backgroundColor: Colors.yellow),
                     enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
                       color: Colors.yellow,
@@ -52,15 +53,19 @@ class SignIn extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 16.0),
                 child: TextField(
+                  
                   obscureText: true,
+                  obscuringCharacter: "*",
                     autocorrect: false,
                     enableSuggestions: false,
                     controller: password,
                   cursorColor: Colors.red,
                   decoration: InputDecoration(
-                    prefixIcon: Icon(Icons.lock, color: Colors.yellow),
+                    filled: true,
+                    fillColor: Colors.yellow,
+                    prefixIcon: Icon(Icons.lock, color: Colors.black),
                     labelText: 'Password',
-                    labelStyle: TextStyle(color: Colors.yellow),
+                    labelStyle: TextStyle(color: Colors.black,fontSize: 18,backgroundColor: Colors.yellow),
                     enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(color: Colors.yellow)),
                     border: OutlineInputBorder(),
@@ -80,7 +85,7 @@ class SignIn extends StatelessWidget {
                   onPressed: () {
                             getAll(email.text, password.text);
                             if (cred == true) {
-                              Navigator.pushNamed(context, '/homepage');
+                              Navigator.pushNamed(context, '/taps');
                             } else {
                               print('false');
                             }

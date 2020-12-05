@@ -1,5 +1,24 @@
 import 'package:flutter/material.dart';
-class Profile extends StatelessWidget {
+import 'main.dart';
+
+
+
+class Profile extends StatefulWidget {
+  _ProfileState createState() => _ProfileState();
+}
+
+class _ProfileState extends State<Profile> {
+  String name;
+  String email;
+  void info() {
+    try {
+      name = current.name;
+      email = current.email;
+    } catch (_) {
+      name = 'Guest';
+      email = 'Guest';
+    }
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -82,10 +101,12 @@ class Profile extends StatelessWidget {
             ),
             ),
             SizedBox(
+              
               height: 60,
             ),
+            
             Text(
-              "Mohammad Anas"
+              "$name"
               ,style: TextStyle(
                 fontSize: 25.0,
                 color:Colors.yellow,
@@ -94,6 +115,7 @@ class Profile extends StatelessWidget {
             ),
             ),
             SizedBox(
+              
               height: 10,
             ),
             Text(
@@ -109,7 +131,7 @@ class Profile extends StatelessWidget {
               height: 10,
             ),
             Text(
-              "example@example.com"
+              "$email"
               ,style: TextStyle(
                 fontSize: 15.0,
                 color:Colors.yellow,
