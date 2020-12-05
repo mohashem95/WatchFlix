@@ -1,13 +1,19 @@
 import 'package:flutter/material.dart';
+import 'main.dart';
 
-class SignIn extends StatefulWidget {
-  @override
-  _SignInState createState() => _SignInState();
-}
+class SignIn extends StatelessWidget {
+  final email = TextEditingController();
+  final password = TextEditingController();
 
-class _SignInState extends State<SignIn> {
 
-  bool value = false;
+  void dispose() {
+    try {
+      email.clear();
+      password.clear();
+    } catch (_) {}
+  }
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -28,12 +34,12 @@ class _SignInState extends State<SignIn> {
                 
                 padding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 16.0),
                 child: TextField(
-                  
+                  controller: email,
                   cursorColor: Colors.red,
                   decoration: InputDecoration(
                     
-                    prefixIcon: Icon(Icons.person, color: Colors.yellow),
-                    labelText: 'Usernme',
+                    prefixIcon: Icon(Icons.email, color: Colors.yellow),
+                    labelText: 'email',
                     labelStyle: TextStyle(color: Colors.yellow),
                     enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
@@ -46,6 +52,10 @@ class _SignInState extends State<SignIn> {
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 16.0),
                 child: TextField(
+                  obscureText: true,
+                    autocorrect: false,
+                    enableSuggestions: false,
+                    controller: password,
                   cursorColor: Colors.red,
                   decoration: InputDecoration(
                     prefixIcon: Icon(Icons.lock, color: Colors.yellow),
@@ -67,7 +77,14 @@ class _SignInState extends State<SignIn> {
                     style: TextStyle(color: Colors.black),
                   ),
                   color: Colors.yellow,
-                  onPressed: () {},
+                  onPressed: () {
+                            getAll(email.text, password.text);
+                            if (cred == true) {
+                              Navigator.pushNamed(context, '/homepage');
+                            } else {
+                              print('false');
+                            }
+                          },
                 ),
               ),
             ],

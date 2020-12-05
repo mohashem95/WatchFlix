@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:watchflix/profile.dart';
 import 'package:watchflix/homepage.dart';
-import 'package:watchflix/show.dart';
-/*import 'package:watchflix/signin.dart';
-import 'package:watchflix/fakeData.dart';*/
+import 'package:watchflix/signin.dart';
+import 'package:watchflix/fakeData.dart';
 import 'package:watchflix/camera.dart';
+import 'package:watchflix/signup.dart';
+import 'homepage11.dart';
 
 
 
@@ -36,16 +37,13 @@ class TabNavigationItem {
           icon: Icon(Icons.person),
           title: Text("Profile"),
         ),
-        /*TabNavigationItem(
+        TabNavigationItem(
           page: Camera(/*camera: firstCamera,*/),
           icon: Icon(Icons.camera_alt),
           title: Text("camera"),
-        ),*/
-        TabNavigationItem(
-          page: ShowPage(),
-          icon: Icon(Icons.camera_alt),
-          title: Text("signup"),
-        ),
+        )
+        
+        
         
       ];
 }
